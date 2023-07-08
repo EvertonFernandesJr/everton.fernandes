@@ -1,0 +1,83 @@
+<div class="sidebar-wrapper">
+  <div class="profile-container">
+    <img class="profile" src="assets/photo.png" alt="Lucas Peixoto" />
+    <h1 class="name">{{ myName }}</h1>
+    <h3 class="tagline">{{ myJob }}</h3>
+  </div>
+
+  <div class="contact-container container-block">
+    <ul class="list-unstyled contact-list">
+      <li class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:{{ contactDetails.email }}">{{
+          contactDetails.email
+        }}</a>
+      </li>
+      <li class="phone">
+        <i class="fas fa-phone"></i>
+        <a href="tel:{{ contactDetails.phone }}">{{ contactDetails.phone }}</a>
+      </li>
+      <li class="linkedin">
+        <i class="fab fa-linkedin"></i>
+        <a href="{{ contactDetails.linkedin }}" target="_blank">Linkedin</a>
+      </li>
+      <li class="github">
+        <i class="fab fa-github"></i>
+        <a href="{{ contactDetails.github }}" target="_blank">Github</a>
+      </li>
+      <li class="facebook">
+        <i class="fab fa-facebook"></i>
+        <a href="{{ contactDetails.facebook }}" target="_blank"
+          >Fcebook</a
+        >
+      </li>
+      <li class="instagram">
+        <i class="fab fa-instagram"></i>
+        <a href="{{ contactDetails.instagram }}" target="_blank">Instagram</a>
+      </li>
+      <li class="medium">
+        <i class="fab fa-medium"></i>
+        <a href="{{ contactDetails.medium }}" target="_blank">Medium</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="education-container container-block">
+    <h2 class="container-block-title">Educação</h2>
+    <div class="item">
+      <h4 class="degree">Mestrado Engenharia Agrícola</h4>
+      <h5 class="meta">Universidade Estadual de Campinas (Unicamp)</h5>
+      <div class="time">2018 - 2020</div>
+    </div>
+    <div class="item">
+      <h4 class="degree">Graduação Engenharia Agrícola</h4>
+      <h5 class="meta">Universidade Estadual de Campinas (Unicamp)</h5>
+      <div class="time">2012 - 2017</div>
+    </div>
+
+  </div>
+
+  <div class="languages-container container-block">
+    <h2 class="container-block-title">Idiomas</h2>
+    <ul class="list-unstyled interests-list">
+      <li>Português <span class="lang-desc">(Nativo)</span></li>
+      <li>Inglês <span class="lang-desc">(Avançado)</span></li>
+    </ul>
+  </div>
+
+  <div class="interests-container container-block">
+    <h2 class="container-block-title">Competências Técnicas</h2>
+    <ul class="list-unstyled interests-list">
+      <li>Frontend</li>
+      <li>HTML, CSS (LESS, SCSS )</li>
+      <li>Javascript/Typescript</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Angular</li>
+      <li>React</li>
+      <li>NextJs</li>
+    </ul>
+  </div>
+  <!--//interests-->
+</div>
+<!--//sidebar-wrapper-->

@@ -1,0 +1,33 @@
+@import "./app/styles/mixins.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  /* height: 100vh; */
+  background: #3d3d3d;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: darken(#696d70, 15%);
+  @include transition(all 0.4s ease-in-out);
+
+  &:hover {
+    text-decoration: underline;
+    color: darken(#696d70, 30%);
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
