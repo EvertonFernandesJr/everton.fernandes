@@ -10,9 +10,10 @@
     font-size: 20px;
     font-weight: 500;
     color: darken(#696d70, 15%);
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 
     .icon-holder {
       width: 35px;
@@ -32,7 +33,6 @@
         margin-top: 10px;
       }
     }
-
   }
 
   .section {
@@ -56,26 +56,33 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 2px;
+
+    @media only screen and (max-width: 965px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .job-title {
-    color: #3F4650;
+    color: #3f4650;
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
+
+
   }
 
   .time {
     position: absolute;
     right: 0;
     top: 0;
-    color: #97AAC3;
+    color: #97aac3;
   }
 
   .company {
     margin-bottom: 10px;
-    color: #97AAC3;
+    color: #97aac3;
   }
 
   .project-title {
@@ -122,7 +129,13 @@
       }
 
       .details {
-        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.9) 100%) repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0)
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0px,
+            rgba(0, 0, 0, 0.9) 100%
+          )
+          repeat scroll 0 0;
         width: 100%;
         height: auto;
         overflow: hidden;
@@ -190,9 +203,7 @@
       }
     }
   }
-
 }
-
 
 .skillset {
   .item {
@@ -205,7 +216,6 @@
     margin-top: 0;
     margin-bottom: 12px;
   }
-
 
   .level-bar {
     height: 12px;

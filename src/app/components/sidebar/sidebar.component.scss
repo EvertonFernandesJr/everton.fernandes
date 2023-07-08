@@ -4,14 +4,11 @@
   background: #696d70;
   height: 100%;
   min-width: 300px;
-  /* position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 300px;
-  height: fit-content; */
-  /* height: 100%;
-  min-height: 800px; */
   color: #fff;
+
+  @media only screen and (max-width: 955px) {
+    min-width: 250px;
+  }
 
   a {
     color: #fff;
@@ -19,7 +16,6 @@
 
   .profile-container {
     padding: 10px;
-    //background: darken(#696d70, 10%);
     background: rgba(0, 0, 0, 0.25);
     text-align: center;
     color: #fff;
@@ -30,6 +26,10 @@
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 5px;
+
+    @media only screen and (max-width: 955px) {
+      font-size: 24px;
+    }
   }
 
   .tagline {
@@ -50,13 +50,7 @@
   }
 
   .contact-list {
-    .fab, .fas {
-      margin-right: 5px;
-      font-size: 18px;
-      vertical-align: middle;
-    }
-
-    li {
+       li {
       margin-bottom: 15px;
 
       &:last-child {
@@ -65,9 +59,7 @@
     }
 
     .email {
-      .svg-inline--fa {
-        font-size: 14px;
-      }
+
     }
   }
 

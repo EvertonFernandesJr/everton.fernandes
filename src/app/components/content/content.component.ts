@@ -36,6 +36,8 @@ export class ContentComponent {
   public articles: Article[];
 
   constructor() {
+
+
     this.experiences = [
       {
         title: 'Desenvolvedor de Aplicações',
