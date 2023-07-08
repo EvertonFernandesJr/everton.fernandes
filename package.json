@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "ghdeploy": "ng build --output-path docs --base-href /profile_v2/",
+    "ghdeploy": "ng build --output-path docs --base-href /resume/",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
