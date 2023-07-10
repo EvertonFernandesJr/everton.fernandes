@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OrderbyPipe } from 'src/app/pipes/orderby/orderby.pipe';
 
 type Date = {
   year: string;
@@ -26,7 +25,7 @@ type Article = {
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [CommonModule, OrderbyPipe],
+  imports: [CommonModule],
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss'],
 })

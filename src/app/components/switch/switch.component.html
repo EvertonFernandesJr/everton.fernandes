@@ -1,0 +1,15 @@
+<div class="switcher">
+  <svg class="switcher__icon">
+    <use xlink:href="assets/sprite_24.svg#icon-moon"></use>
+  </svg>
+  <label class="switcher__label-box">
+    <input
+      type="checkbox"
+      [checked]="themeService.isLightTheme"
+      (change)="onCheckboxChange($event)" />
+    <span class="slider round"></span>
+  </label>
+  <svg class="switcher__icon">
+    <use xlink:href="assets/sprite_24.svg#icon-sun"></use>
+  </svg>
+</div>

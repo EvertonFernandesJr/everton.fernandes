@@ -1,73 +1,89 @@
-<div class="sidebar-wrapper">
-  <div class="profile-container">
-    <img class="profile" src="assets/photo.png" alt="Lucas Peixoto" />
-    <h1 class="name">{{ myName }}</h1>
-    <h3 class="tagline">{{ myJob }}</h3>
+<div class="container">
+  <div class="container__switch">
+    <app-switch />
+  </div>
+  <div class="container__header">
+    <img src="assets/photo.png" alt="Lucas Peixoto" />
+    <h1>{{ myName }}</h1>
+    <h3>{{ myJob }}</h3>
   </div>
 
-  <div class="contact-container container-block">
-    <ul class="list-unstyled contact-list">
-      <li class="email">
-        <i class="fas fa-envelope"></i>
+  <div class="container__contacts">
+    <ul>
+      <li>
+        <svg class="icon">
+          <use
+            xlink:href="assets/sprite_32.svg#icon-mail-envelope-closed"
+          ></use>
+        </svg>
         <a href="mailto:{{ contactDetails.email }}">{{
           contactDetails.email
         }}</a>
       </li>
       <li class="phone">
-        <i class="fas fa-phone"></i>
+        <svg class="icon">
+          <use xlink:href="assets/sprite_32.svg#icon-mobile"></use>
+        </svg>
         <a href="tel:{{ contactDetails.phone }}">{{ contactDetails.phone }}</a>
       </li>
       <li class="linkedin">
-        <i class="fab fa-linkedin"></i>
+        <svg class="icon">
+          <use xlink:href="assets/sprite_32.svg#icon-linkedin"></use>
+        </svg>
         <a href="{{ contactDetails.linkedin }}" target="_blank">Linkedin</a>
       </li>
       <li class="github">
-        <i class="fab fa-github"></i>
+        <svg class="icon">
+          <use xlink:href="assets/sprite_32.svg#icon-github"></use>
+        </svg>
         <a href="{{ contactDetails.github }}" target="_blank">Github</a>
       </li>
       <li class="facebook">
-        <i class="fab fa-facebook"></i>
-        <a href="{{ contactDetails.facebook }}" target="_blank"
-          >Facebook</a
-        >
+        <svg class="icon">
+          <use xlink:href="assets/sprite_32.svg#icon-facebook2"></use>
+        </svg>
+        <a href="{{ contactDetails.facebook }}" target="_blank">Facebook</a>
       </li>
       <li class="instagram">
-        <i class="fab fa-instagram"></i>
+        <svg class="icon">
+          <use xlink:href="assets/sprite_32.svg#icon-instagram"></use>
+        </svg>
         <a href="{{ contactDetails.instagram }}" target="_blank">Instagram</a>
       </li>
       <li class="medium">
-        <i class="fab fa-medium"></i>
+        <svg class="icon">
+          <use xlink:href="assets/sprite_32.svg#icon-flickr2"></use>
+        </svg>
         <a href="{{ contactDetails.medium }}" target="_blank">Medium</a>
       </li>
     </ul>
   </div>
 
-  <div class="education-container container-block">
-    <h2 class="container-block-title">Educação</h2>
-    <div class="item">
-      <h4 class="degree">Mestrado Engenharia Agrícola</h4>
-      <h5 class="meta">Universidade Estadual de Campinas (Unicamp)</h5>
-      <div class="time">2018 - 2020</div>
+  <div class="container__education">
+    <h2>Educação</h2>
+    <div class="container__education--item">
+      <h4>Mestrado Engenharia Agrícola</h4>
+      <h5>Universidade Estadual de Campinas (Unicamp)</h5>
+      <h6>2018 - 2020</h6>
     </div>
-    <div class="item">
-      <h4 class="degree">Graduação Engenharia Agrícola</h4>
-      <h5 class="meta">Universidade Estadual de Campinas (Unicamp)</h5>
-      <div class="time">2012 - 2017</div>
+    <div class="container__education--item">
+      <h4>Graduação Engenharia Agrícola</h4>
+      <h5>Universidade Estadual de Campinas (Unicamp)</h5>
+      <h6>2012 - 2017</h6>
     </div>
-
   </div>
 
-  <div class="languages-container container-block">
-    <h2 class="container-block-title">Idiomas</h2>
-    <ul class="list-unstyled interests-list">
-      <li>Português <span class="lang-desc">(Nativo)</span></li>
-      <li>Inglês <span class="lang-desc">(Avançado)</span></li>
+  <div class="container__languages">
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Português <span>(Nativo)</span></li>
+      <li>Inglês <span>(Avançado)</span></li>
     </ul>
   </div>
 
-  <div class="interests-container container-block">
-    <h2 class="container-block-title">Competências Técnicas</h2>
-    <ul class="list-unstyled interests-list">
+  <div class="container__skills">
+    <h2>Competências Técnicas</h2>
+    <ul>
       <li>Frontend</li>
       <li>HTML, CSS (LESS, SCSS )</li>
       <li>Javascript/Typescript</li>
@@ -78,6 +94,4 @@
       <li>NextJs</li>
     </ul>
   </div>
-  <!--//interests-->
 </div>
-<!--//sidebar-wrapper-->

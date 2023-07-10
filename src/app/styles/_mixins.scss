@@ -1,3 +1,23 @@
+@mixin scrollbar {
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--grey-dark-color-3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color-dark);
+  }
+}
+
 @mixin text-shadow($string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
   text-shadow: $string;
 }

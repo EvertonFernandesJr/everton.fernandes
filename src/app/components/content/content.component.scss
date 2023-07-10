@@ -1,229 +1,132 @@
 @import "../../styles/mixins.scss";
 
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  fill: var(--white);
+  display: inline-block;
+  color: var(--white);
+  @include border-radius(3px);
+  background: var(--sidebar-surface-2);
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+}
+
 .container {
-  background: #fff;
+  background: var(--white);
   max-height: 100%;
-  padding: 40px;
+  padding: 4rem;
 
-  .section-title {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;
-    color: darken(#696d70, 15%);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  &__section {
+    margin-bottom: 6rem;
 
-
-    .icon-holder {
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-      margin-right: 10px;
-      display: inline-block;
-      color: #fff;
-      @include border-radius(3px);
-      background: darken(#696d70, 15%);
-      text-align: center;
-      font-size: 20px;
-      position: relative;
-
-      .svg-inline--fa {
-        font-size: 14px;
-        margin-top: 10px;
-      }
+    > h2 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--grey-dark-color-1);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
     }
-  }
 
-  .section {
-    margin-bottom: 60px;
+    &--summary {
+      > p {
+        margin: 1rem 0 1rem 0;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: var(--grey-dark-color-1);
+      }
 
-    &.summary-section {
-      p.color-blod {
-        color: #333;
+      > p.color-blod {
+        color: var(--grey-dark-color-1);
         font-weight: 500;
       }
     }
-  }
 
-  .experiences-section {
-    .item {
-      margin-bottom: 30px;
-    }
-  }
+    &--item {
+      margin-bottom: 3rem;
 
-  .upper-row {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 2px;
+      &_first-row {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    @media only screen and (max-width: 965px) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .job-title {
-    color: #3f4650;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 500;
-
-
-  }
-
-  .time {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #97aac3;
-  }
-
-  .company {
-    margin-bottom: 10px;
-    color: #97aac3;
-  }
-
-  .project-title {
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-
-  .projects-section {
-    .intro {
-      margin-bottom: 30px;
-    }
-
-    .item {
-      margin-bottom: 15px;
-    }
-  }
-
-  .portfolio-content {
-    margin: 0px;
-
-    .portfolio-item {
-      overflow: hidden;
-      position: relative;
-      height: 300px;
-      border-radius: 5px;
-      margin-bottom: 30px;
-
-      a {
-        position: absolute;
-        z-index: 10;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-      }
-
-      img {
-        width: 100%;
-        height: 300px;
-        border-radius: 5px;
-        transition: all 0.4s ease-in-out;
-      }
-
-      .details {
-        background: rgba(0, 0, 0, 0)
-          linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0) 0px,
-            rgba(0, 0, 0, 0.9) 100%
-          )
-          repeat scroll 0 0;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        position: absolute;
-        z-index: 5;
-        bottom: 0px;
-        left: 0px;
-        padding: 40px 15px 10px 15px;
-        transition: all 0.2s ease-in-out;
-
-        h4 {
-          font-size: 16px;
-          color: #fff;
-          margin: 0px;
-          width: 70%;
+        @media only screen and (max-width: 345px) {
+          flex-direction: column;
         }
 
-        .stats {
-          position: absolute;
-          right: 15px;
-          bottom: -5px;
-          transition: all 0.2s ease-in-out;
+        > h2 {
+          color: var(--grey-dark-color-1);
+          font-size: 1.6rem;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 500;
+        }
 
-          li {
-            display: inline-block;
-            margin-left: 15px;
-            color: #fff;
+        > h3 {
+          color: var(--grey-color-4);
+          font-size: 1.2rem;
+          font-weight: 300;
+
+          &.stack {
+            @media only screen and (max-width: 255px) {
+             display: none
+            }
           }
         }
 
-        .tags {
-          position: absolute;
-          left: 15px;
-          bottom: -60px;
-          transition: all 0.2s ease-in-out;
+        > a {
+          color: var(--accent-color);
+          text-decoration: none;
+          font-size: 1.8rem;
+          font-weight: 5300;
 
-          li {
-            background: #696d70;
-            display: inline-block;
-            margin-right: 15px;
-            color: #fff;
-            font-size: 13px;
-            padding: 2px 6px;
-            border-radius: 4px;
+          &:hover {
+            text-decoration: underline;
           }
         }
       }
 
-      &:hover {
-        img {
-          transform: scale(1.1, 1.1);
+      &_second-row {
+        display: flex;
+        align-items: flex-start;
+
+        color: var(--grey-color-4);
+        font-size: 1.2rem;
+        font-weight: 300;
+
+        @media only screen and (max-width: 255px) {
+          margin-top: 1rem;
+          align-items: center;
+         }
+
+        > img {
+          border-radius: 5px;
+          transition: all 0.4s ease-in-out;
+
+          @media only screen and (max-width: 255px) {
+            height: 150px;
+            width: 200px;
+          }
         }
+      }
 
-        .details {
-          padding-bottom: 50px;
+      &_third-row {
+        margin-top: 1rem;
 
-          .stats {
-            bottom: 40px;
-          }
-
-          .tags {
-            bottom: 0px;
-          }
+        > p {
+          margin-left: 1rem;
+          color: var(--grey-dark-color-1);
+          font-size: 1.4rem;
+          font-weight: 400;
         }
       }
     }
   }
 }
 
-.skillset {
-  .item {
-    margin-bottom: 15px;
-    overflow: hidden;
-  }
-
-  .level-title {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 12px;
-  }
-
-  .level-bar {
-    height: 12px;
-    background: #f5f5f5;
-    @include border-radius(2px);
-  }
-
-  .theme-progress-bar {
-    background: lighten(#696d70, 10%);
-  }
-}
