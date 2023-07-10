@@ -35,8 +35,6 @@ export class ContentComponent {
   public articles: Article[];
 
   constructor() {
-
-
     this.experiences = [
       {
         title: 'Desenvolvedor de Aplicações',
@@ -100,21 +98,21 @@ export class ContentComponent {
         title: 'Fluxo de dados via rota no Angular',
         date: 'Jul 2023',
         link: 'https://medium.com/@lspeixotodev/fluxo-de-dados-via-rota-no-angular-58631d598ce5',
-        imageLink: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*9cFbPGzi10c_IZmI6H01Ug.png',
+        imageLink: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*9XHJF8y8WgtjGQjHSplcNg.png',
         stack: 'Angular',
       },
       {
         title: 'Criando um CRUD com Angular: Observables + Signals',
         date: 'Jul 2023',
         link: 'https://medium.com/@lspeixotodev/criando-um-crud-com-angular-observables-signals-75008ff4671c',
-        imageLink: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*yE2437HSGKKx5RNSmn5c5g.png',
+        imageLink: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*d35wbwxf1dp25qHvuTt_2w.png',
         stack: 'Angular',
       },
       {
         title: 'Controle de Erros customizados no Angular com Control Container',
         date: 'Jun 2023',
         link: 'https://medium.com/@lspeixotodev/otimiza%C3%A7%C3%A3o-das-valida%C3%A7%C3%B5es-de-formul%C3%A1rios-no-angular-com-control-container-cc49b73305d3',
-        imageLink: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*Qfb1zqpNX4kNg7d2hoW6Bw.png',
+        imageLink: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*y0kse8hUG9v4r6m9amoLFg.png',
         stack: 'Angular',
       }
     ];
