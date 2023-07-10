@@ -12,7 +12,7 @@ import { SwitchComponent } from '../switch/switch.component';
 export class SidebarComponent {
   public myName = 'Lucas Peixoto Fernandes';
 
-  public myJob = 'Desenvolvedor Full Stack';
+  public myJob = 'Desenvolvedor Fullstack';
 
   public contactDetails = {
     email: 'lspeixotodev@gmail.com',

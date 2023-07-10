@@ -6,9 +6,11 @@
     <input
       type="checkbox"
       [checked]="themeService.isLightTheme"
-      (change)="onCheckboxChange($event)" />
+      (change)="onCheckboxChange($event)"
+    />
     <span class="slider round"></span>
   </label>
+
   <svg class="switcher__icon">
     <use xlink:href="assets/sprite_24.svg#icon-sun"></use>
   </svg>

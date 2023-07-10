@@ -10,10 +10,10 @@ import { ThemeService } from '../services/theme/theme.service';
         return (): void => {
           const theme = localStorage.getItem('LUCAS_P_PROFILE_THEME')!;
 
-          if (JSON.parse(JSON.stringify(theme)) === 'light-theme') {
-            themeService.setLightTheme();
-          } else {
+          if (JSON.parse(JSON.stringify(theme)) === 'dark-theme') {
             themeService.setDarkTheme();
+          } else {
+            themeService.setLightTheme();
           }
         };
       },

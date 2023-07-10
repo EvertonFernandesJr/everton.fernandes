@@ -47,7 +47,7 @@ export class ContentComponent {
         },
         toDate: 'Presente',
         description:
-          'Atuação como desenvolvedor, onde trabalhe como Angular, NgRx e microfrontend. Atuei também na gestão técnica dos projetos desenvolvidos.',
+          'Atuação como desenvolvedor web, onde trabalho com Angular, NgRx e microfrontend. Atuo também na gestão técnica dos projetos desenvolvidos e na mentoria de desenvolvedores/estagiários em início de carreira',
       },
       {
         title: 'Desenvolvedor FullStack',
