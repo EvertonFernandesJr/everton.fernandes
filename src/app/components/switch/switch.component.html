@@ -1,17 +1,21 @@
 <div class="switcher">
-  <svg class="switcher__icon">
-    <use xlink:href="assets/sprite_24.svg#icon-moon"></use>
-  </svg>
-  <label class="switcher__label-box">
+  <ng-container *ngIf="isLightTheme; else lightThemeTemplate">
+    <svg class="switcher__icon" (click)="changeThemeHandler('dark')">
+      <use xlink:href="assets/sprite_24.svg#icon-moon"></use>
+    </svg>
+  </ng-container>
+  <!-- <label class="switcher__label-box">
     <input
       type="checkbox"
       [checked]="themeService.isLightTheme"
       (change)="onCheckboxChange($event)"
     />
     <span class="slider round"></span>
-  </label>
+  </label> -->
 
-  <svg class="switcher__icon">
-    <use xlink:href="assets/sprite_24.svg#icon-sun"></use>
-  </svg>
+  <ng-template #lightThemeTemplate>
+    <svg class="switcher__icon" (click)="changeThemeHandler('light')">
+      <use xlink:href="assets/sprite_24.svg#icon-sun"></use>
+    </svg>
+  </ng-template>
 </div>

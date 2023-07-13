@@ -20,6 +20,7 @@
     justify-content: flex-end;
     padding-right: 0.5rem;
   }
+
   &__header {
     padding: 1rem;
     background: var(--sidebar-surface-2);
@@ -33,6 +34,9 @@
       display: block;
       @include border-radius(100%);
       box-shadow: var(--shadow-dark);
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
     }
 
     > h1 {
@@ -58,7 +62,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        list-style:circle;
+        list-style: circle;
         font-size: 1.5rem;
         list-style: 0.8rem;
         margin-bottom: 0.8rem;

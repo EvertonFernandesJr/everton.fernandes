@@ -8,10 +8,9 @@ export class ThemeService {
 
   public isLightTheme!: boolean;
 
-  public onCheckboxChange(event: Event): void {
-    const checked = (event.target as HTMLInputElement).checked;
+  public changeThemeHandler(theme: 'dark' | 'light'): void {
 
-    if (checked) {
+    if (theme === 'light') {
       this.setLightTheme();
     } else {
       this.setDarkTheme();
