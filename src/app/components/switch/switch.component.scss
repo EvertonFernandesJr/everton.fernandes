@@ -7,6 +7,20 @@
     line-height: 20px;
   }
 
+  &__moon {
+    fill: var(--black);
+    &:hover {
+      fill: var(--blue-200);
+    }
+  }
+
+  &__sun {
+    fill: var(--white);
+    &:hover {
+      fill: var(--yellow-200);
+    }
+  }
+
   &__icon {
     position: relative;
     display: inline-block;
@@ -14,15 +28,11 @@
     height: 25px;
     top: 10px;
     right: 2px;
-    fill: var(--black);
-    color: var(--black);
-    opacity: 0.7;
 
     &:hover {
-      transform: scale(1.05);
-      opacity: 1;
-      fill: var(--yellow-200);
+      transform: scale(1.2);
     }
+
   }
 
   &__label-box {

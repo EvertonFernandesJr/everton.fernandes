@@ -1,4 +1,4 @@
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule, NgIf, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from 'src/app/services/theme/theme.service';
 
@@ -6,7 +6,7 @@ import { ThemeService } from 'src/app/services/theme/theme.service';
   selector: 'app-switch',
   templateUrl: './switch.component.html',
   styleUrls: ['./switch.component.scss'],
-  imports: [NgIf],
+  imports: [NgIf, NgStyle],
   standalone: true,
 })
 export class SwitchComponent implements OnInit {
