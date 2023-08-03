@@ -8,24 +8,16 @@ import { ContentComponent } from '../content/content.component';
   standalone: true,
   imports: [CommonModule, SidebarComponent, ContentComponent],
   template: `
-    <div class="container">
-      <app-sidebar />
-      <app-content />
+    <div class="main">
+      <aside class="sidebar">
+        <app-sidebar />
+      </aside>
+
+      <div class="content">
+        <app-content />
+      </div>
     </div>
   `,
-  styles: [
-    `
-      @import '../../styles/mixins.scss';
-
-      .container {
-        background: transparent;
-        display: flex;
-
-        @media only screen and (max-width: 640px) {
-          flex-direction: column;
-        }
-      }
-    `,
-  ],
+  styles: [``],
 })
 export class HomeComponent {}
