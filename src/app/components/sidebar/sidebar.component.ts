@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SwitchComponent } from '../switch/switch.component';
+import { SwitchComponent } from '@app/shared/components/switch/switch.component';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -9,9 +10,9 @@ import { SwitchComponent } from '../switch/switch.component';
   template: `
     <div class="border-round-md">
       <div class="flex flex-column align-items-center surface-100 h-auto pb-4">
-        <!-- <div class="w-full p-2 flex flex-column align-items-end">
+        <div class="w-full p-2 flex flex-column align-items-end">
           <app-switch />
-        </div> -->
+        </div>
         <img
           class="mt-2 w-6 h-6 select-none"
           src="assets/photo.png"

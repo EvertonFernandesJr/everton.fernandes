@@ -1,0 +1,36 @@
+@import './mixins';
+
+$bp-huge: 93.75em; //1500px/16
+$bp-largest: 75em; //1200px/16
+$bp-large: 68.75em; //1100px
+$bp-medium: 57.1875em; //915px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; //500px
+$bp-smallestx: 18.75em; //300px
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--surface-ground);
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

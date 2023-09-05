@@ -1,0 +1,15 @@
+<div
+  class="container"
+  [@toastTrigger]="(showMessage$ | async) ? 'open' : 'close'"
+  [class]="messageSeverity$ | async"
+>
+  <div class="container__message">
+    <p class="container__message--text">
+      {{ message$ | async }}
+    </p>
+  </div>
+
+  <div class="container__dismiss" (click)="dismissMessage()">
+    <span class="container__dismiss--close-icon">&#10008;</span>
+  </div>
+</div>

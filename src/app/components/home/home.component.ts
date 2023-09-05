@@ -8,14 +8,12 @@ import { ContentComponent } from '../content/content.component';
   standalone: true,
   imports: [CommonModule, SidebarComponent, ContentComponent],
   template: `
-    <div class="main">
-      <aside class="sidebar">
-        <app-sidebar />
-      </aside>
+    <div>
 
-      <div class="content">
+
+
         <app-content />
-      </div>
+
     </div>
   `,
   styles: [``],

@@ -3,6 +3,47 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@envs/*": [
+        "src/environments/*"
+      ],
+      "@config/*": [
+        "src/app/config/*"
+      ],
+      "@features/*": [
+        "src/app/features/*"
+      ],
+      "@layout/*": [
+        "src/app/features/layout/*"
+      ],
+      "@layoutC/*": [
+        "src/app/features/layout/components/*"
+      ],
+      "@layoutS/*": [
+        "src/app/features/layout/services/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@sharedC/*": [
+        "src/app/shared/components/*"
+      ],
+      "@sharedD/*": [
+        "src/app/shared/directives/*"
+      ],
+      "@sharedM/*": [
+        "src/app/shared/models/*"
+      ],
+      "@sharedS/*": [
+        "src/app/shared/services/*"
+      ],
+      "@sharedI/*": [
+        "src/app/shared/interceptors/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -19,11 +60,29 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "allowSyntheticDefaultImports": true,
     "lib": [
       "ES2022",
       "dom"
+    ],
+    "typeRoots": [
+      "./node_modules/primeng",
+      "./node_modules",
+      "./node_modules/@types"
+    ],
+    "types": [
+      "jasmine"
     ]
   },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode",
+    "**/*.spec.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

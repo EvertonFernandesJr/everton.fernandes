@@ -1,0 +1,178 @@
+{
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "actions": {
+    "delete": "Delete"
+  },
+  "confirmation": {
+    "confirmQuestion": "Are you sure that you want to proceed?",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "header": {
+    "search": "Search Products...",
+    "login": "Login",
+    "logout": "Logout",
+    "saudation": "Hi!",
+    "news": "Click to see news!",
+    "cart": "Cart"
+  },
+  "sidebar": {
+    "books": "Books",
+    "coffees": "Coffee Mugs",
+    "mouses": "Mouse Pads",
+    "tags": "Luggage Tags",
+    "bags": "Bags",
+    "cart": "My Cart",
+    "members": "Members",
+    "orders": "Orders",
+    "filters": {
+      "title": "Filter by:",
+      "price": "Price",
+      "range": "Price range",
+      "categories": "Categories",
+      "rating": "Rating",
+      "action": "Filter"
+    }
+  },
+  "language": {
+    "selectTitle": "Language",
+    "pt": "Portuguese",
+    "en": "English"
+  },
+  "productCard": {
+    "stock": "Stock",
+    "add": "Buy",
+    "new": "New",
+    "errorButton": "Try again",
+    "addToCartInfo": "New product",
+    "addToCartContent": "Product included in the cart successfully!"
+  },
+  "product": {
+    "title": "Products",
+    "addToCart": "Buy",
+    "backToProducts": "Products",
+    "new": "New",
+    "interest": "interest-free",
+    "order": "Order:",
+    "display": "Display:"
+  },
+  "cart": {
+    "detail": "Shopping Cart",
+    "review": "Review your order before purchase",
+    "price": "Price",
+    "total": "Total",
+    "goToPay": "Go to Pay",
+    "emptyCart": "Your Cart is Currently Empty",
+    "goToProducts":"Go to products",
+    "rating": "Rating"
+  },
+  "checkout": {
+    "header": {
+      "title": "Purchase Data",
+      "subtitle": "Please complete this form for purchase yout items"
+    },
+    "customer": {
+      "title": "Customer",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email"
+    },
+    "address": {
+      "shippingTitle": "Shipping Address",
+      "billingTitle": "Billing Address",
+      "country": "Country",
+      "chooseCountry": "Select a country",
+      "street": "Street",
+      "city": "City",
+      "state": "State",
+      "chooseState": "Select a state",
+      "zipCode": "Zip Code",
+      "billingAddressAsShippingAddress": "Use Billing Address same as Shipping address ?"
+    },
+    "creditCard": {
+      "title": "Credit card",
+      "cardType": "Card Type",
+      "chooseCardType": "Select a cart type",
+      "nameOnCard": "Card Holder Name",
+      "cardNumber": "Card Number",
+      "securityCode": "Security Code (CVV)",
+      "expirationMonth": "Expiration Month",
+      "selectExpirationMonth": "Select the expiration month",
+      "expirationYear": "Expiration Year",
+      "selectExpirationYear": "Select the expiration year"
+    },
+    "review": {
+      "title": "Review your order",
+      "quantity": "Quantity",
+      "shipping": "Delivery fee",
+      "free": "Free",
+      "totalPrice": "Total Price",
+      "finalize": "Finalize your purchase"
+    },
+    "actions": {
+      "purchaseButton": "Purchase",
+      "goToProducts": "Keep buying"
+    },
+    "messages": {
+      "unfinished": "Finalize your open purchase!"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "subtitle": "Login for best experience in IBM Shop",
+    "form": {
+      "usernameOrEmail": "Username or E-mail",
+      "password": "Password"
+    },
+    "actions": {
+      "loginButton": "Login"
+    },
+    "createAccount": "Create an account"
+  },
+  "register": {
+    "title": "Register",
+    "subtitle": "Register in IBM Shop",
+    "form": {
+      "email": "E-mail",
+      "name": "Name",
+      "password": "Password",
+      "username": "Username"
+    },
+    "actions": {
+      "registerButton": "Register"
+    }
+  },
+  "questions": {
+    "haveAccount": "Already have an account ? "
+  },
+  "errors": {
+    "required": "This is a mandatory field!",
+    "email": "E-mail address is invalid!",
+    "minlength": "This field must be at least {{ minlength }} characters long!",
+    "maxlength": "This field must have a maximum of {{ maxlength }} characters long!",
+    "pattern": "This pattern is invalid!",
+    "min": "Enter a value greater than the minimum value!",
+    "max": "Enter a value less than the maximum value!",
+    "notOnlyWhitespace": "Don`t enter with white spaces!"
+  },
+  "categories": {
+    "books": "Book",
+    "coffee": "Coffee Mug",
+    "mouse": "Mouse Pad",
+    "luggage": "Luggage Tag",
+    "bags": "Bag"
+  }
+}
