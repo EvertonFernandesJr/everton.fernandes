@@ -24,26 +24,25 @@ import { TranslocoService } from '@ngneat/transloco';
       provide: APP_INITIALIZER,
       multi: true,
       useFactory: (translocoService: TranslocoService): Function => {
-        const fallbackLang = 'pt';
+        const defaultLang = 'pt';
+
+        const languageKey = 'LUCAS_P_PROFILE_LANGUAGE';
 
         return (): void => {
+          translocoService.setDefaultLang(defaultLang);
+
+          translocoService.setActiveLang(defaultLang);
+
           translocoService.setFallbackLangForMissingTranslation({
-            fallbackLang: fallbackLang,
+            fallbackLang: defaultLang,
           });
 
-          const actualLanguage = localStorage.getItem(
-            'LUCAS_P_PROFILE_LANGUAGE'
-          )!;
+          const actualLanguage = localStorage.getItem(languageKey)!;
 
           if (JSON.parse(actualLanguage) !== null) {
             translocoService.setActiveLang(actualLanguage);
           } else {
-            localStorage.setItem('LUCAS_P_PROFILE_LANGUAGE', fallbackLang);
-            localStorage.setItem(
-              'LUCAS_P_PROFILE_LANGUAGE',
-              JSON.stringify(fallbackLang)
-            );
-            translocoService.setActiveLang(fallbackLang);
+            localStorage.setItem(languageKey, JSON.stringify(defaultLang));
           }
         };
       },
