@@ -21,7 +21,7 @@ export function getPathParam(name: string): string {
 
 export function getPathParam$(name: string): Observable<string> {
   const activatedRoute = inject(ActivatedRoute);
-  return activatedRoute.params.pipe(map(value => value[name]));
+  return activatedRoute.params.pipe(map((value) => value[name]));
 }
 
 export function provideTransloco(): EnvironmentProviders {

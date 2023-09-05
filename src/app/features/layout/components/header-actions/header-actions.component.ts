@@ -21,16 +21,6 @@ import { LanguageService } from '@sharedS/language/language.service';
       class="flex-none w-auto flex gap-4 align-content-center align-items-center mr-2"
     >
       <div class="cursor-pointer">
-        <i
-          pTooltip="{{ 'header.news' | transloco }}"
-          tooltipPosition="bottom"
-          class="pi pi-bell text-2xl"
-          pBadge
-          severity="warning"
-        ></i>
-      </div>
-
-      <div class="cursor-pointer">
         <app-switch />
       </div>
 
