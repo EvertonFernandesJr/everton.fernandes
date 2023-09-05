@@ -24,7 +24,7 @@ export function getPathParam$(name: string): Observable<string> {
   return activatedRoute.params.pipe(map((value) => value[name]));
 }
 
-export function provideTransloco(): EnvironmentProviders {
+export function providerTransloco(): EnvironmentProviders {
   return makeEnvironmentProviders([
     defaultProviders,
     {
