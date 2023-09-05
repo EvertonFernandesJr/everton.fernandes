@@ -35,6 +35,7 @@ export function provideTransloco(): EnvironmentProviders {
         fallbackLang: 'pt',
         reRenderOnLangChange: true,
         prodMode: !isDevMode(),
+        failedRetries: 2,
       }),
     },
     { provide: TRANSLOCO_LOADER, useClass: TranslocoHttpLoader },

@@ -15,7 +15,6 @@ import { provideTransloco } from '@shared/helpers/constants';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideTransloco(),
     importProvidersFrom(
       BrowserModule,
       CommonModule,
@@ -27,6 +26,7 @@ bootstrapApplication(AppComponent, {
     ),
     provideAnimations(),
     provideHttpClient(withInterceptorsFromDi()),
+    provideTransloco(),
   ],
   // eslint-disable-next-line no-console
 }).catch((err) => console.error(err));

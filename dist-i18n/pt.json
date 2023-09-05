@@ -1,0 +1,178 @@
+{
+  "months": {
+    "january": "Janeiro",
+    "february": "Fevereiro",
+    "march": "Março",
+    "april": "ABril",
+    "may": "Maio",
+    "june": "Junho",
+    "july": "Julho",
+    "august": "Agosto",
+    "september": "Setembro",
+    "october": "Outubro",
+    "november": "Novembro",
+    "december": "Dezembro"
+  },
+  "actions": {
+    "delete": "Deletar"
+  },
+  "confirmation": {
+    "confirmQuestion": "Tem certeza de que deseja prosseguir?",
+    "yes": "Sim",
+    "no": "Não"
+  },
+  "header": {
+    "search": "Pesquisar Produtos...",
+    "login": "Logar",
+    "logout": "Sair",
+    "saudation": "Olá!",
+    "news": "Clique para ver novidades!",
+    "cart": "Carrinho"
+  },
+  "sidebar": {
+    "books": "Livros",
+    "coffees": "Cafés",
+    "mouses": "Mouse Pads",
+    "tags": "Etiquetas",
+    "bags": "Mochilas",
+    "cart": "Carrinho",
+    "members": "Membros",
+    "orders": "Pedidos",
+    "filters": {
+      "title": "Filtrar por:",
+      "price": "Preço",
+      "range": "Intervalo de preço",
+      "categories": "Categorias",
+      "rating": "Avaliações",
+      "action": "Filtrar"
+    }
+  },
+  "language": {
+    "selectTitle": "Idioma",
+    "pt": "Português",
+    "en": "Inglês"
+  },
+  "productCard": {
+    "stock": "Estoque",
+    "add": "Comprar",
+    "new": "Novo",
+    "errorButton": "Tente novamente",
+    "addToCartInfo": "Produto adicionado",
+    "addToCartContent": "Produto adicionado no carrinho com sucesso!"
+  },
+  "product": {
+    "title": "Produtos",
+    "addToCart": "Comprar",
+    "backToProducts": "Produtos",
+    "new": "Novo",
+    "interest": "sem juros",
+    "order": "Ordenar:",
+    "display": "Exibir:"
+  },
+  "cart": {
+    "detail": "Carrinho de compra",
+    "review": "Revise seu pedido antes da compra",
+    "price": "Preço",
+    "total": "Total",
+    "goToPay": "Pagamento",
+    "emptyCart": "Seu carrinho está vazio",
+    "goToProducts":"Voltar aos produtos",
+    "rating": "Avaliações"
+  },
+  "checkout": {
+    "header": {
+      "title": "Dados de compra",
+      "subtitle": "Por favor, preencha este formulário para finalizar sua compra"
+    },
+    "customer": {
+      "title": "Cliente",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "email": "Email"
+    },
+    "address": {
+      "shippingTitle": "Endereço de envio",
+      "billingTitle": "Endereço de Cobrança",
+      "country": "País",
+      "chooseCountry": "Selecione o país",
+      "street": "Rua",
+      "city": "Cidade",
+      "state": "Estado",
+      "chooseState": "Selecione o estado",
+      "zipCode": "Cep",
+      "billingAddressAsShippingAddress": "Usar endereço de cobrança igual ao endereço de entrega ?"
+    },
+    "creditCard": {
+      "title": "Cartão de crédito",
+      "cardType": "Bandeira",
+      "chooseCardType": "Selecione a bandeira",
+      "nameOnCard": "Nome do Titular",
+      "cardNumber": "Número cartão",
+      "securityCode": "Código (CVV)",
+      "expirationMonth": "Mês de validade",
+      "selectExpirationMonth": "Selecione o mês de expiração",
+      "expirationYear": "Ano de validade",
+      "selectExpirationYear": "Selecione o ano de expiração"
+    },
+    "review": {
+      "title": "Revise seu pedido",
+      "quantity": "Quantidade",
+      "shipping": "Taxa de entrega",
+      "free":"Free",
+      "totalPrice": "Total",
+      "finalize": "Finalize sua compra"
+    },
+    "actions": {
+      "purchaseButton": "Finalizar Compra",
+      "goToProducts": "Continuar comprando"
+    },
+    "messages": {
+      "unfinished": "Finalize sua compra em aberto!"
+    }
+  },
+  "login": {
+    "title": "Logar",
+    "subtitle": "Faça login melhorar sua experiência no IBM Shop",
+    "form": {
+      "usernameOrEmail": "Usuário ou E-mail",
+      "password": "Senha"
+    },
+    "actions": {
+      "loginButton": "Logar"
+    },
+    "createAccount": "Crie uma conta"
+  },
+  "register": {
+    "title": "Cadastro",
+    "subtitle": "Cadastro no IBM Shop",
+    "form": {
+      "email": "E-mail",
+      "name": "Nome",
+      "password": "Senha",
+      "username": "Nome de usuário"
+    },
+    "actions": {
+      "registerButton": "Cadastro"
+    }
+  },
+  "questions": {
+    "haveAccount": "Ja possui uma conta ? "
+  },
+  "errors": {
+    "required": "Este é um campo obrigatório!",
+    "email": "Endereço de e-mail inválido!",
+    "minlength": "Este campo deve ter pelo menos {{ minlength }} caracteres!",
+    "maxlength": "Este campo deve ter no máximo {{ maxlength }} caracteres!",
+    "pattern": "Este padrão é inválido!",
+    "min": "Insira um valor maior que o valor mínimo!",
+    "max": "Insira um valor menor que o valor máximo!",
+    "notOnlyWhitespace": "Não insira espaços em branco!"
+  },
+  "categories": {
+    "books": "Livro",
+    "coffee": "Café",
+    "mouse": "Mouse Pad",
+    "luggage": "Etiquetas",
+    "bags": "Mochila"
+  }
+}
