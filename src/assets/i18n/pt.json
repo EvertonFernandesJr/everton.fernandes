@@ -1,4 +1,56 @@
 {
+  "socialMedias": {
+    "title": "Contatos"
+  },
+  "profile": {
+    "title": "Perfil",
+    "description": "Formado em Engenharia Agrícola pela Universidade Estadual de Campinas (Unicamp), com mestrado em Modelagem Estrutural de Vigas de Madeira Laminada Colada Armada (MLCA). O primeiro contato com programação veio em 2015, com a linguagem Python. Já em 2020 iniciando a carreira na área de programação, foram desenvolvidas diversas rotinas de automatização para equipes, com foco em otimização de tempo e redução de mão de obra para envio de e-mails, tratamento de dados e RPAs. Durante esta experiência como trainee iniciei uma especialização no desenvolvimento web, com foco no frontEnd. Atualmente sigo me especializando no desenvolvimento Web com foco em Spring Boot, Quarkus e Next Js."
+  },
+  "experiences": {
+    "title": "Experiências",
+    "xp1": {
+      "title": "Desenvolvedor de software Senior",
+      "company": "IBM",
+      "startDate": "Jun 2022",
+      "endDate": "Presente",
+      "description": "Atuação como desenvolvedor web, onde trabalho com Angular, NgRx e microfrontend. Atuo também na gestão técnica dos projetos desenvolvidos e na mentoria de desenvolvedores/estagiários em início de carreira."
+    },
+    "xp2": {
+      "title": "Desenvolvedor de software",
+      "company": "IBM",
+      "startDate": "Jun - 2022",
+      "endDate": "Ago - 2023",
+      "description": "Atuação como desenvolvedor web, onde trabalho com Angular, NgRx e microfrontend. Atuo também na gestão técnica dos projetos desenvolvidos e na mentoria de desenvolvedores/estagiários em início de carreira."
+    },
+    "xp3": {
+      "title": "Desenvolvedor Fullstack",
+      "company": "Freelancer",
+      "startDate": "Jun - 2020",
+      "endDate": "Presente",
+      "description": "Atuação como desenvolvedor fullstack em desenvolvimento de sistemas (desktop/web) para automatização de tarefas."
+    },
+    "xp4": {
+      "title": "Analista de Sistemas Pl",
+      "company": "Stefanini",
+      "startDate": "Nov - 2021",
+      "endDate": "Jun - 2022",
+      "description": "Atuação como desenvolvedor frontend (Angular + PrimeNg), (React + Material UI) em projetos para melhoria de processos internos na Stefanini. Participação em diversos processos de estudo e implementação de novas estruturas e arquiteturasde código para aumentar escalabilidade de projetos e qualidade de código. Os projetos são direcionados para as equipes de recrutamento e seleção,departamento pessoal e comercial."
+    },
+    "xp5": {
+      "title": "Analista de Sistemas Jr",
+      "company": "Stefanini",
+      "startDate": "Fev - 2021",
+      "endDate": "Nov - 2021",
+      "description": "Atuação como desenvolvedor frontend (Angular + PrimeNg) em projetos para melhoria de processos internos na Stefanini. Os projetos eram direcionados para equipes de recrutamento e seleção, departamento pessoal e comercial."
+    },
+    "xp6": {
+      "title": "Trainee",
+      "company": "Stefanini",
+      "startDate": "Jan - 2020",
+      "endDate": "Fev - 2021",
+      "description": "Desenvolvimento de rotinas para automatização de tarefas das equipes do departamento pessoal da empresa. Essas rotinas envolviam disparos em massa de comunicados via e-mail, geração de relatórios, RPAs entre outros."
+    }
+  },
   "months": {
     "january": "Janeiro",
     "february": "Fevereiro",
@@ -76,7 +128,7 @@
     "total": "Total",
     "goToPay": "Pagamento",
     "emptyCart": "Seu carrinho está vazio",
-    "goToProducts":"Voltar aos produtos",
+    "goToProducts": "Voltar aos produtos",
     "rating": "Avaliações"
   },
   "checkout": {
@@ -118,7 +170,7 @@
       "title": "Revise seu pedido",
       "quantity": "Quantidade",
       "shipping": "Taxa de entrega",
-      "free":"Free",
+      "free": "Free",
       "totalPrice": "Total",
       "finalize": "Finalize sua compra"
     },

@@ -1,4 +1,56 @@
 {
+  "experiences": {
+    "title": "Experiences",
+    "xp1": {
+      "title": "Senior Software Developer",
+      "company": "IBM",
+      "startDate": "Jun 2022",
+      "endDate": "Present",
+      "description": "I work as a web developer, where I work with Angular, NgRx and microfrontend. I also work in the technical management of developed projects and mentoring developers/interns at the beginning of their careers."
+    },
+    "xp2": {
+      "title": "Software developer",
+      "company": "IBM",
+      "startDate": "Jun - 2022",
+      "endDate": "Aug - 2023",
+      "description": "I work as a web developer, where I work with Angular, NgRx and microfrontend. I also work in the technical management of developed projects and mentoring developers/interns at the beginning of their careers."
+    },
+    "xp3": {
+      "title": "Fullstack Developer",
+      "company": "Freelancer",
+      "startDate": "Jun - 2020",
+      "endDate": "Present",
+      "description": "Acting as a fullstack developer in system development (desktop/web) for task automation."
+    },
+    "xp4": {
+      "title": "Systems Analyst",
+      "company": "Stefanini",
+      "startDate": "Nov - 2021",
+      "endDate": "Jun - 2022",
+      "description": "Acting as a frontend developer (Angular + PrimeNg), (React + Material UI) in projects to improve internal processes at Stefanini. Participation in several processes of study and implementation of new structures and code architectures to increase project scalability and code quality. The projects are directed to the recruitment and selection teams, personnel and commercial department."
+    },
+    "xp5": {
+      "title": "Jr Systems Analyst",
+      "company": "Stefanini",
+      "startDate": "Feb - 2021",
+      "endDate": "Nov - 2021",
+      "description": "Acting as a frontend developer (Angular + PrimeNg) in projects to improve internal processes at Stefanini. The projects were aimed at recruitment and selection teams, personnel and commercial department."
+    },
+    "xp6": {
+      "title": "Trainee",
+      "company": "Stefanini",
+      "startDate": "Jan - 2020",
+      "endDate": "Feb - 2021",
+      "description": "Development of routines to automate tasks for the company's personnel department teams. These routines involved mass releases of communications via e-mail, generation of reports, RPAs, among others."
+    }
+  },
+  "socialMedias": {
+    "title": "Contacts"
+  },
+  "profile": {
+    "title": "Profile",
+    "description": "Graduated in Agricultural Engineering from the State University of Campinas (Unicamp), with a master's degree in Structural Modeling of Reinforced Glued Laminated Wood Beams (MLCA). The first contact with programming came in 2015, with the Python language.`. Already in 2020, starting his career in the programming area, several automation routines were developed for teams, focusing on optimizing time and reducing manpower for sending emails, data processing and RPAs. During this experience as a trainee I started a specialization in web development, focusing on the frontend. Currently I continue to specialize in Web development with a focus on Spring Boot, Quarkus and Next Js."
+  },
   "months": {
     "january": "January",
     "february": "February",

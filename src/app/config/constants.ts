@@ -38,7 +38,7 @@ export const arrayNumbersRange = (
     (value, index) => start + index * step
   );
 
-  return years.map((year) => {
+  return years.map(year => {
     return { name: year, code: year };
   });
 };
@@ -63,32 +63,33 @@ export const initialRequestError = {
   errorMessage: null,
 };
 
-export const menuRouteItems = [
+export const socialMedias = [
   {
-    route: 'cart',
-    i18nAlias: 'sidebar.cart',
-    idLogo: 'pi pi-shopping-cart',
-    title: 'My Cart',
+    redirectUrl: 'https://www.linkedin.com/in/lucassacramoni/',
+    idLogo: 'pi pi-linkedin',
+    title: 'Linkedin',
   },
   {
-    route: 'members',
-    i18nAlias: 'sidebar.members',
-    idLogo: 'pi pi-users',
-    title: 'Members',
+    redirectUrl: 'https://www.facebook.com/lspeixotof/',
+    idLogo: 'pi pi-facebook',
+    title: 'Facebook',
   },
   {
-    route: 'orders',
-    i18nAlias: 'sidebar.orders',
-    idLogo: 'pi pi-id-card',
-    title: 'Orders',
+    redirectUrl: 'https://www.instagram.com/lspeixotof/',
+    idLogo: 'pi pi-instagram',
+    title: 'Instagram',
+  },
+  {
+    redirectUrl: 'https://github.com/lucasspeixoto',
+    idLogo: 'pi pi-github',
+    title: 'Github',
+  },
+  {
+    redirectUrl:
+      'https://api.whatsapp.com/send?phone=5519982621117&text=Ol%C3%A1%21+Lucas,%20tudo%20bem%20?&lang=pt_pt',
+    idLogo: 'pi pi-whatsapp',
+    title: 'Whatsapp',
   },
 ];
 
-export const flags = [
-  'mastercard',
-  'visa',
-  'amex',
-  'cash',
-  'discover',
-  'paypal',
-];
+export const flags = ['mastercard', 'visa', 'amex', 'cash', 'discover', 'paypal'];

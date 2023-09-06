@@ -1,5 +1,5 @@
 import { Component, HostListener, inject, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { LayoutService } from '@layoutS/layout.service';
 import { tap } from 'rxjs/operators';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
@@ -13,30 +13,21 @@ import { InputTextModule } from 'primeng/inputtext';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { SwitchComponent } from '@sharedC/switch/switch.component';
 import { LanguageService } from '@sharedS/language/language.service';
+import { StorageService } from '@sharedS/storage/storage.service';
 
 @Component({
   selector: 'app-header-actions',
   template: `
-    <div
-      class="flex-none w-auto flex gap-4 align-content-center align-items-center mr-2"
-    >
+    <div class="flex-none w-auto flex gap-4 align-content-center align-items-center mr-2">
       <div class="cursor-pointer">
         <app-switch />
       </div>
 
-      <div
-        class=""
-        (click)="changeLanguage('en')"
-        *ngIf="activeLanguage === 'pt'"
-      >
+      <div class="" (click)="changeLanguage('en')" *ngIf="activeLanguage === 'pt'">
         <img src="assets/images/brazil-flag.png" />
       </div>
 
-      <div
-        class=""
-        (click)="changeLanguage('pt')"
-        *ngIf="activeLanguage === 'en'"
-      >
+      <div class="" (click)="changeLanguage('pt')" *ngIf="activeLanguage === 'en'">
         <img src="assets/images/eua-flag.png" />
       </div>
     </div>
@@ -61,7 +52,7 @@ import { LanguageService } from '@sharedS/language/language.service';
   providers: [LanguageService],
 })
 export class HeaderActionsComponent implements OnInit {
-  private readonly router = inject(Router);
+  private readonly storageService = inject(StorageService);
 
   public readonly layoutService = inject(LayoutService);
 
@@ -75,7 +66,7 @@ export class HeaderActionsComponent implements OnInit {
 
   public staticMenuActive!: boolean;
   public staticMenuActive$ = this.layoutService.staticMenuActive$.pipe(
-    tap((response) => (this.staticMenuActive = response))
+    tap(response => (this.staticMenuActive = response))
   );
 
   public ngOnInit(): void {
@@ -90,5 +81,6 @@ export class HeaderActionsComponent implements OnInit {
   public changeLanguage(value: string): void {
     this.activeLanguage = value;
     this.translocoService.setActiveLang(value);
+    this.storageService.setStorageItem('LUCAS_P_PROFILE_LANGUAGE', value);
   }
 }

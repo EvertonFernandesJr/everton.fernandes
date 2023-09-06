@@ -13,7 +13,7 @@ import { tap } from 'rxjs/operators';
 import { MessagesModule } from 'primeng/messages';
 import { Message } from 'primeng/api';
 import { LanguageService } from '@sharedS/language/language.service';
-import { menuRouteItems } from '@app/config/constants';
+import { socialMedias } from '@app/config/constants';
 
 @Component({
   selector: 'app-sidebar-content',
@@ -22,18 +22,23 @@ import { menuRouteItems } from '@app/config/constants';
       <div class="flex flex-column justify-content-between p-0 m-0">
         <div class="overflow-hidden">
           <!-- * Menu -->
-          <div class="mb-4 pl-0 sm:pl-2 pt-4 flex flex-column gap-0 sm:gap-1">
-            <div
-              *ngFor="let menuItem of menuRouteItems"
-              routerLinkActive="active-route"
-              class="mr-2 flex align-items-center border-round-lg p-2 gap-2 cursor-pointer layout-links"
-              [routerLink]="menuItem.route"
-            >
-              <i [ngClass]="menuItem.idLogo" class="text-xl"></i>
+          <ul class="m-2 pl-0 list-none sm:pl-2 pt-4 flex flex-column gap-0 sm:gap-1">
+            <li>
+              <span class="mb-4 text-2xl font-bold">{{
+                'socialMedias.title' | transloco
+              }}</span>
+              <div *ngFor="let menuItem of socialMedias">
+                <a
+                  class="no-underline text-base text-blue-600 layout-links m-2 flex align-items-center border-round-lg p-2 gap-2 cursor-pointer "
+                  target="_blank"
+                  [href]="menuItem.redirectUrl">
+                  <i [ngClass]="menuItem.idLogo" class="text-xl"></i>
 
-              <span class="text-lg">{{ menuItem.i18nAlias | transloco }}</span>
-            </div>
-          </div>
+                  <span class="text-lg">{{ menuItem.title }}</span>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -43,20 +48,10 @@ import { menuRouteItems } from '@app/config/constants';
       .layout-links {
         &:hover {
           background-color: var(--surface-hover);
-        }
-
-        &:focus {
           outline: 0 none;
           outline-offset: 0;
           transition: box-shadow 0.2s;
           box-shadow: var(--focus-ring);
-        }
-      }
-
-      .active-route {
-        i,
-        span {
-          color: var(--blue-500);
         }
       }
     `,
@@ -82,7 +77,7 @@ import { menuRouteItems } from '@app/config/constants';
   providers: [LanguageService],
 })
 export class SidebarContentComponent {
-  public readonly menuRouteItems = menuRouteItems;
+  public readonly socialMedias = socialMedias;
 
   public readonly layoutService = inject(LayoutService);
 
@@ -92,7 +87,7 @@ export class SidebarContentComponent {
 
   public staticMenuActive!: boolean;
   public staticMenuActive$ = this.layoutService.staticMenuActive$.pipe(
-    tap((response) => (this.staticMenuActive = response))
+    tap(response => (this.staticMenuActive = response))
   );
 
   public windowSize = window.innerWidth;

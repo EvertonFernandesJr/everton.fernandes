@@ -4,16 +4,16 @@ import { ToastModule } from 'primeng/toast';
 import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
-import { HeaderComponent } from './features/layout/components/header/header.component';
+import { HeaderComponent } from '@layoutC/header/header.component';
 import { MessageService, PrimeNGConfig } from 'primeng/api';
 import { Observable } from 'rxjs';
-import { LayoutService } from './features/layout/services/layout.service';
-import { LoadingService } from './shared/services/loading/loading.service';
-import { RouterService } from './shared/services/router/router.service';
+import { LayoutService } from '@layoutS/layout.service';
+import { LoadingService } from '@sharedS/loading/loading.service';
+import { RouterService } from '@sharedS/router/router.service';
 import { TranslocoService } from '@ngneat/transloco';
-import { SidebarComponent } from './features/layout/components/sidebar/sidebar.component';
-import { LoadingComponent } from './shared/components/loading/loading.component';
-import { ToastMessageComponent } from './shared/components/toast-message/toast-message.component';
+import { SidebarComponent } from '@layoutC/sidebar/sidebar.component';
+import { LoadingComponent } from '@sharedC/loading/loading.component';
+import { ToastMessageComponent } from '@sharedC/toast-message/toast-message.component';
 
 @Component({
   selector: 'app-root',

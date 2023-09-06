@@ -15,37 +15,17 @@ import { HeaderActionsComponent } from '../header-actions/header-actions.compone
 @Component({
   selector: 'app-header',
   template: `
-    <header
-      class="glass fixed shadow-3 pt-2 pb-2 pr-2 z-5 h-4rem sm:gap-2 gap-1 w-full flex flex-wrap align-items-center sm:justify-content-between justify-content-center"
-    >
-      <!-- Logo e botão menu -->
-      <div class="flex-none flex align-items-center gap-2">
+    <header class="glass fixed shadow-3 z-5 h-4rem w-full">
+      <div class="flex flex-wrap mx-2 h-4rem align-items-center justify-content-between ">
         <p-button
           (click)="sidebarLayoutToggleHander()"
           icon="pi pi-align-justify"
-          styleClass="p-button-rounded p-button-primary p-button-text p-button-lg"
-        ></p-button>
+          styleClass="p-button-rounded p-button-primary p-button-text p-button-lg"></p-button>
+
+        <span class="md:text-2xl text-xl font-bold text-primary">Lucas Peixoto</span>
+
+        <app-header-actions />
       </div>
-
-      <!-- Barra de pesquisa -->
-      <!-- <div class="sm:flex-grow-1 flex-grown-0">
-        <span class="p-input-icon-right w-full flex aligh-items-center">
-          <i class="pi pi-search"></i>
-          <input
-            pInputText
-            type="text"
-            class="p-inputtext-md w-full"
-            placeholder="{{ 'header.search' | transloco }}"
-            [ngModel]="productName"
-            (ngModelChange)="productName = $event"
-            (keyup.enter)="searchProductsByNameHandler()"
-          />
-        </span>
-      </div> -->
-
-      <!-- Botões -->
-
-      <app-header-actions />
     </header>
   `,
   styles: [``],
@@ -81,7 +61,7 @@ export class HeaderComponent {
 
   public staticMenuActive!: boolean;
   public staticMenuActive$ = this.layoutService.staticMenuActive$.pipe(
-    tap((response) => (this.staticMenuActive = response))
+    tap(response => (this.staticMenuActive = response))
   );
 
   @HostListener('window:resize', ['$event'])
