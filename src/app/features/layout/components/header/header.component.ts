@@ -22,7 +22,7 @@ import { HeaderActionsComponent } from '../header-actions/header-actions.compone
           icon="pi pi-align-justify"
           styleClass="p-button-rounded p-button-primary p-button-text p-button-lg"></p-button>
 
-        <span class="md:text-2xl text-xl font-bold text-primary">Lucas Peixoto</span>
+        <span class="md:text-2xl text-xl font-bold text-primary">Everton Fernandes Jr</span>
 
         <app-header-actions />
       </div>

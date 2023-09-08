@@ -6,6 +6,6 @@ export const APP_ROUTES: Routes = [
     path: '',
     component: HomeComponent,
     pathMatch: 'full',
-    data: { title: 'Lucas Peixoto' },
+    data: { title: 'Everton Fernandes Jr' },
   },
 ];
